@@ -5,7 +5,7 @@ import org.bukkit.Bukkit
 import org.bukkit.event.HandlerList
 import org.bukkit.event.Listener
 
-class QuickListener: Listener {
+open class QuickListener: Listener {
 
     fun register() {
         Bukkit.getPluginManager().registerEvents(this, APIPlugin.instance)
