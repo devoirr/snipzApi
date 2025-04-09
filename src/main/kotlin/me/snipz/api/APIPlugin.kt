@@ -1,5 +1,6 @@
 package me.snipz.api
 
+import me.snipz.api.gui.GUIListener
 import org.bukkit.plugin.java.JavaPlugin
 
 class APIPlugin: JavaPlugin() {
@@ -10,6 +11,8 @@ class APIPlugin: JavaPlugin() {
 
     override fun onEnable() {
         instance = this
+
+        GUIListener().register()
     }
 
 }
