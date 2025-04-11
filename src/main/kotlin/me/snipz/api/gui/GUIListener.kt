@@ -80,8 +80,10 @@ class GUIListener : QuickListener() {
 
     @EventHandler
     fun onClose(event: InventoryCloseEvent) {
-        val gui = event.inventory.getHolder(false) as GUI? ?: return
-        gui.close(event)
+        if (event.inventory.getHolder(false) !is GUI)
+            return
+
+        (event.inventory.getHolder(false) as GUI).close(event)
     }
 
     @EventHandler
