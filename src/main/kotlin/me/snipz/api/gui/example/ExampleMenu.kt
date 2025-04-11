@@ -17,7 +17,7 @@ class ExampleMenu(player: Player): GUI(player, 9, Component.text("Example")) {
 
     /**
      * Called when the GUI is opened for the first time.
-     * Can be called mannualy in code.
+     * Can be called manually in code.
      */
     override fun redraw() {
         // When opening for the first time, create a close-handler.
