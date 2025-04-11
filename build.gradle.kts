@@ -11,12 +11,14 @@ repositories {
     maven("https://repo.purpurmc.org/snapshots")
     maven("https://repo.codemc.io/repository/maven-releases/")
     maven("https://repo.codemc.io/repository/maven-snapshots/")
+    maven("https://jitpack.io")
 }
 
 dependencies {
-    compileOnly("org.purpurmc.purpur", "purpur-api", "1.21.4-R0.1-SNAPSHOT")
+    compileOnly("org.purpurmc.purpur", "purpur-api", "1.21.3-R0.1-SNAPSHOT")
     implementation("com.j256.ormlite:ormlite-jdbc:6.1")
     implementation("com.github.retrooper:packetevents-spigot:2.7.0")
+    compileOnly("com.github.MilkBowl:VaultAPI:1.7")
 }
 
 kotlin {
